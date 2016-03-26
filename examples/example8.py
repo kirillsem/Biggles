@@ -14,7 +14,7 @@ x = numpy.arange( -10., 10., 20./n )
 t = numpy.arange( -1., 1., 2./n )
 z = numpy.zeros( (len(x),len(t)) )
 
-for i in range(len(x)):
+for i in range(len( x )):
 	for j in range(len(t)):
 		z[i,j] = -12. * (3. + 4.*numpy.cosh(2.*x[i]-8.*t[j]) \
 			+ numpy.cosh(4.*x[i] - 64.*t[j])) / \

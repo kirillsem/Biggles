@@ -9,7 +9,7 @@ from numpy import *
 def mag( vec ):
 	return sqrt(sum(vec*vec, -1))
 
-def make_coloredpoints_plot():
+def make_coloredpoints_plot( ):
 
 	# This is the magic recipe for an array of points from (0,0) to (10,10)
 	(x,y) = reshape(indices([10+1,10+1]), (2,-1))
@@ -28,7 +28,7 @@ def make_coloredpoints_plot():
 					type='filled circle', size=6 )
 
 	# make plot
-	p = biggles.FramedPlot()
+	p = biggles.FramedPlot( )
 	p.title = "Colored Points Plot"
 	p.add( cp )
 

@@ -16,7 +16,7 @@ try:
 	m = biggles.read_rows( "continents" )
 except IOError:
 	print err_msg
-	sys.exit(-1)
+	sys.exit( -1 )
 
 p = biggles.HammerAitoffPlot()
 p.ribs_l = 2
