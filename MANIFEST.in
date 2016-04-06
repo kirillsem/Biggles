@@ -1,8 +1,8 @@
-include ChangeLog COPYING CREDITS INSTALL README* TODO
-include make.* Makefile src/Makefile src/libplot/Makefile
-include src/Makefile.win src/libplot/Makefile.win src/libplot/libplotexports.def
-include *.spec MANIFEST.in
-include src/config.ini
-recursive-include examples *.py
-recursive-include src *.pyc
+	include ChangeLog COPYING CREDITS INSTALL README* TODO
+	include make.* Makefile src/Makefile src/libplot/Makefile
+	include src/Makefile.win src/libplot/Makefile.win src/libplot/libplotexports.def
+	include *.spec MANIFEST.in
+	include src/config.ini
+	recursive-include examples *.py
+	recursive-include src *.pyc
 

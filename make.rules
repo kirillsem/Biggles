@@ -1,13 +1,13 @@
-.PHONY: all clean
+	.PHONY: all clean
 
-all: $(TARGETS)
+	all: $(TARGETS)
 
-clean:
-	-rm *.so
+	clean:
+		-rm *.so
 
-%.o: %.c
-	$(CC) $(CPPFLAGS) $(CFLAGS) -c -o $@ $<
+	%.o: %.c
+		$(CC) $(CPPFLAGS) $(CFLAGS) -c -o $@ $<
 
-%.so: %.o
-	$(CCSHARED) -o $@ $^ $(LDFLAGS)
+	%.so: %.o
+		$(CCSHARED) -o $@ $^ $(LDFLAGS)
 
